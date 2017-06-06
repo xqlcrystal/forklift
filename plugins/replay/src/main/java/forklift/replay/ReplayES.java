@@ -143,8 +143,6 @@ public class ReplayES {
             this.thread.join(180 * 1000);
         } catch (InterruptedException ignored) {
         }
-
-        this.writer.shutdown();
     }
 
     @LifeCycle(value=ProcessStep.Pending, annotation=Replay.class)
